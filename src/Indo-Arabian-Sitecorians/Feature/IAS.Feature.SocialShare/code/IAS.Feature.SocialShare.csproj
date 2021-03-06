@@ -584,7 +584,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\IAS.Feature.SocialShare.Serialization.config" />
     <None Include="Global.asax" />
     <Content Include="Views\SocialShare\SocialShare.cshtml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />

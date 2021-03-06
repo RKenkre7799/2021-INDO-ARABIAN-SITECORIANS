@@ -121,28 +121,6 @@ Languages:
     Value: 
   Versions:
   - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20080407T105900Z
-    - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
-      Hint: __Valid to
-      Value: 
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
-    - ID: "75577384-3c97-45da-a847-81b00500e250"
-      Hint: Title
-      Value: SITECORE HACKATHON 2021
-    - ID: "a60acd61-a6db-4182-8329-c957982cec74"
-      Hint: Text
-      Value: |
-        We are team with passionate Sitecore Developers and have develop few contributions for the community in this Hackathon. Thank you.
-        
-    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
-      Hint: __Valid from
-      Value: 
 - Language: "it-IT"
   Fields:
   - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
@@ -152,20 +130,3 @@ Languages:
     Hint: __Short description
     Value: Welcome to Sitecore.
   Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20080407T105900Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
-    - ID: "75577384-3c97-45da-a847-81b00500e250"
-      Hint: Title
-      Value: Sitecore Experience Platform
-    - ID: "a60acd61-a6db-4182-8329-c957982cec74"
-      Hint: Text
-      Value: |
-        <p style="line-height: 22px;">From a single connected platform that also integrates with other customer-facing platforms, to a single view of the customer in a big data marketing repository, to completely eliminating much of the complexity that has previously held marketers back, the latest version of Sitecore makes customer experience highly achievable. Learn how the latest version of Sitecore gives marketers the complete data, integrated tools, and automation capabilities to engage customers throughout an iterative lifecycle &ndash; the technology foundation absolutely necessary to win customers for life.</p>
-        <p>For further information, please go to the <a href="https://doc.sitecore.net/" target="_blank" title="Sitecore Documentation site">Sitecore Documentation site</a></p>

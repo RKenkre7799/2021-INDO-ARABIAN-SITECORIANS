@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5306DA1E-7BE2-4863-BEF0-EA827F8CB369}</ProjectGuid>
+    <ProjectGuid>{C5075FAF-8CDE-4F02-8913-89177BFE47DF}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IAS.Feature.Content</RootNamespace>
-    <AssemblyName>IAS.Feature.Content</AssemblyName>
+    <RootNamespace>IAS.Feature.Language</RootNamespace>
+    <AssemblyName>IAS.Feature.Language</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
     <Reference Include="FiftyOne.Foundation, Version=3.2.17.2, Culture=neutral, PublicKeyToken=e0b3a8da0bbce49c, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\51Degrees.mobi-core.3.2.17.2\lib\NET40\FiftyOne.Foundation.dll</HintPath>
       <Private>False</Private>
@@ -192,6 +195,12 @@
       <HintPath>..\..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
     <Reference Include="Polly, Version=6.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Polly.6.0.1\lib\netstandard2.0\Polly.dll</HintPath>
       <Private>False</Private>
@@ -264,6 +273,9 @@
       <HintPath>..\..\..\packages\Sitecore.ContentSearch.10.1.0\lib\net48\Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch.ContentExtraction, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Sitecore.ContentSearch.ContentExtraction.10.1.0\lib\net48\Sitecore.ContentSearch.ContentExtraction.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.ContentSearch.Data, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Sitecore.ContentSearch.Data.10.1.0\lib\net48\Sitecore.ContentSearch.Data.dll</HintPath>
       <Private>False</Private>
@@ -271,6 +283,9 @@
     <Reference Include="Sitecore.ContentSearch.Linq, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Sitecore.ContentSearch.Linq.10.1.0\lib\net48\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceEditor, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Sitecore.ExperienceEditor.10.1.0\lib\net48\Sitecore.ExperienceEditor.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Framework.Conditions, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Sitecore.Framework.Conditions.5.0.0\lib\netstandard2.0\Sitecore.Framework.Conditions.dll</HintPath>
@@ -443,6 +458,14 @@
     </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
     <Reference Include="System.Linq" />
     <Reference Include="System.Linq.Async, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\System.Linq.Async.4.0.0\lib\net461\System.Linq.Async.dll</HintPath>
@@ -477,7 +500,7 @@
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>False</Private>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -548,6 +571,7 @@
       <HintPath>..\..\..\packages\WebActivatorEx.2.0.3\lib\net40\WebActivatorEx.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -584,20 +608,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Feature\AddFeatureVersionFromLanguage.config" />
+    <Content Include="sitecore\shell\Applications\Content Manager\Galleries\Languages\Gallery Languages.CopyFrom.xml" />
     <None Include="Global.asax" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Views\Content\Details page header.cshtml" />
-    <Content Include="Views\Content\Details page body.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LanguageCopy\AddVersionRecursiveCommand.cs" />
+    <Compile Include="LanguageCopy\CultureComparer.cs" />
+    <Compile Include="LanguageCopy\GalleryLanguagesForm.cs" />
+    <Compile Include="LanguageCopy\RibbonCopyFromLanguage.cs" />
+    <Compile Include="LanguageCopy\ToggleDeepCopyCommand.cs" />
+    <Compile Include="LanguageCopy\ToggleSubitemCopying.cs" />
+    <Compile Include="LanguageCopy\WebEditCopyFromLanguage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Content\OurContributions.cshtml" />
-    <Content Include="Views\Content\Homepage Content.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -622,9 +651,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49172</DevelopmentServerPort>
+          <DevelopmentServerPort>64412</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49172/</IISUrl>
+          <IISUrl>http://localhost:64412/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -612,7 +612,6 @@
     <Content Include="Assets\js\jquery.js" />
     <Content Include="Assets\js\owl.carousel.min.js" />
     <Content Include="Assets\js\scrolloverflow.js" />
-    <Content Include="App_Config\Include\Project\IAS.Project.Website.Serialization.config" />
     <None Include="Global.asax" />
     <Content Include="Views\Website\Layouts\MainLayout.cshtml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
