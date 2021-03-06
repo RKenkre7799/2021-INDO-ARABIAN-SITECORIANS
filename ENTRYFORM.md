@@ -1,75 +1,56 @@
 # Hackathon Submission Entry form
 
-> __Important__  
-> 
-> Copy and paste the content of this file into README.md or face automatic __disqualification__  
-> All headlines and subheadlines shall be retained if not noted otherwise.  
-> Fill in text in each section as instructed and then delete the existing text, including this blockquote.
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
 ## Team name
-⟹ Write the name of your Hackathon team here
+### INDO-ARABIAN SITECORIANS
 
 ## Category
-⟹ Write the name of the selected category
+(1) Enhancement to the Sitecore Admin (XP) for Content Editors and Marketers
 
 ## Description
-⟹ Write a clear description of your hackathon entry.  
 
-  - Module Purpose
-  - What problem was solved (if any)
-    - How does this module solve it
+  - Flexibility while working with Content for Multi-lingual sites.
+  - While creating a new language version for any content item, all fields are set to emtpy or null, thus creating some inconvience for Content Authors to know the exact content an already created language version of the item has.
 
-_You can alternately paste a [link here](#docs) to a document within this repo containing the description._
+  - This tool provides a flexibility to create multiple language versions for an item and its sub-items with default content loaded with a single-click. 
+  
+  - For example: If there are some large no. of Article/News Content Items already defined in an English Language (en-US) and the company decides to create a Spanish Language (es-US) version, creating language version for each item would be a time-consuming job as well as Powershell solution would not provide default content or non-technical feasibility. 
 
+  
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
-
 ⟹ [Replace this Video link](#video-link)
-
-
 
 ## Pre-requisites and Dependencies
 
-⟹ Does your module rely on other Sitecore modules or frameworks?
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
-
-_Remove this subsection if your entry does not have any prerequisites other than Sitecore_
+⟹ For a plain vanilla Sitecore Instance, one more Language should be added to test this tool.
 
 ## Installation instructions
-⟹ Write a short clear step-wise instruction on how to install your module.  
+⟹ Installation requires 2 simple steps:
 
-> _A simple well-described installation process is required to win the Hackathon._  
-> Feel free to use any of the following tools/formats as part of the installation:
-> - Sitecore Package files
-> - Docker image builds
-> - Sitecore CLI
-> - msbuild
-> - npm / yarn
-> 
-> _Do not use_
-> - TDS
-> - Unicorn
- 
-f. ex. 
+> - Install an additional language version in a plain vanilla Sitecore instance.
+> - Install the package - IndoArabianLanguageVersionCopy-1.0.zip present in folder 
 
-1. Start docker environment using `.\Start-Hackathon.ps1`
-2. Open solution in Visual Studio and run build
-3. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-4. ...
-5. profit
+
 
 ### Configuration
-⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
+⟹ Please make sure AddFeatureVersionFromLanguage.config is present inside \App_Config\Include\Feature folder
 
-_Remove this subsection if your entry does not require any configuration that is not fully covered in the installation instructions already_
 
 ## Usage instructions
-⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
+- Create some Sample items under the Home item with default Content that will be created for English (en) version
+- To create another language version (e.g it-IT or Italian) change the language version of the Home Item.
+(Since this is a new language version no fields are shown.)
+
+By default, the Content Author can create another version of this single item through Version tab without any default content in the newly created language version.
+
+Using this tool, the Content Author can create a new language version of the selected item and its sub-items with default content copied from already existing language.
+
+- Select the item > navigate to Version tab > click on "Copy from" drop button.
+- Select the Language version you want to copy the entire content from. Check Deep Copy if....
+Check Include Subitems, if you want to create language version for all the subitems under the selected item.
+
+
+
+
 
 Include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
 
